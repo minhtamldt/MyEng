@@ -19,3 +19,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+credentials.json
+__pycache__/
+*.pyc
+.env
+.venv/
