@@ -24,10 +24,12 @@ jobs:
           node-version: '24'
 
       - name: Install Dependencies
-        run: npm ci
+        run: npm install
+        working-directory: docs
 
       - name: Build HonKit Site
-        run: npm run build
+        run: npx honkit build
+        working-directory: docs
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
