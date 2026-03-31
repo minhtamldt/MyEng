@@ -1,0 +1,36 @@
+name: Deploy HonKit to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: write
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build HonKit Site
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/_book
