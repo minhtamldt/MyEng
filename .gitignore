@@ -1,0 +1,21 @@
+# Node.js dependencies (heavy, should not be committed)
+node_modules/
+
+# Static HTML directory built by HonKit/GitBook (final output)
+_book/
+
+# Auto-generated eBook files
+*.pdf
+*.epub
+*.mobi
+
+# macOS generated system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# npm/yarn/pnpm error logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
