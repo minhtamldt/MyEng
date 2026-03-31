@@ -1,0 +1,23 @@
+{
+  "title": "",
+  "description": "",
+  "author": "tamtm",
+  "language": "vi",
+  "plugins": [
+    "back-to-top-button",
+    "expandable-chapters",
+    "page-toc-button",
+    "-lunr",
+    "-search",
+    "search-pro"
+  ],
+  "styles": {
+    "website": "styles/website.css"
+  },
+  "links": {
+    "sidebar": {
+      "HonKit": false
+    }
+  }
+}
+
