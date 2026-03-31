@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "gitbook-plugin-back-to-top-button": "^0.1.4",
+    "gitbook-plugin-expandable-chapters": "^0.2.0",
+    "gitbook-plugin-page-toc-button": "^0.1.1",
+    "gitbook-plugin-search-pro": "^2.0.2",
+    "honkit": "^6.1.7"
+  }
+}
